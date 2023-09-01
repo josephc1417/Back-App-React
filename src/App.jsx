@@ -4,6 +4,11 @@ import { hero } from './components/hero'
 import { services } from './components/services'
 import { about } from './components/about'
 import { tours } from './components/tours'
+export default {
+  plugins: [reactRefresh()],
+};
+
+
 export const App = () => {
   return (
     <>
