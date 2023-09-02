@@ -1,23 +1,21 @@
-import React from 'react'
-import { navbar } from './components/navbar'
-import { hero } from './components/hero'
-import { services } from './components/services'
-import { about } from './components/about'
-import { tours } from './components/tours'
-export default {
-  plugins: [reactRefresh()],
-};
+import { Navbar } from './components/navbar'
+import { Hero } from './components/hero'
+import { Services } from './components/services'
+import { About } from './components/about'
+import { Tours } from './components/tours'
+import { Footer } from './components/footer'
+
 
 
 export const App = () => {
   return (
     <>
-   <navbar/>
-   <hero />
-   <about/>
-   <services/>
-   <tours/>
-   <footer/>
+   <Navbar/>
+   <Hero />
+   <About/>
+   <Services/>
+   <Tours/>
+   <Footer/>
     </>
   )
 }

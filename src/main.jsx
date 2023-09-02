@@ -1,9 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import '../src/index.css'
-import reactRefresh from '@vitejs/plugin-react';
+import {App} from '../src/App'
+import '/src/index.css'
 
 
 
-ReactDOM.createRoot(document.getElementById('root')).render( <App />)
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+    )
+
